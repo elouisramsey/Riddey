@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import BoardsContainer from 'components/BoardsContainer'
+import './App.css'
+import Logo from './images/Badge.png'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main>
+      <div className='logoContainer'>
+        <img src={Logo} alt='Logo' />
+      </div>
+      <h1>Upgrade to Riddey PRO and boost productivity!</h1>
+      <p className='subheading'>
+        Pellentesque porttitor euismod ante, accumsan consequat purus!
+      </p>
+      <BoardsContainer />
+    </main>
+  )
 }
 
-export default App;
+export default App
